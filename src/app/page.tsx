@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="flex flex-1 flex-col items-center justify-center gap-6 px-6 text-center">
@@ -17,6 +19,27 @@ export default function Home() {
         Capture your thoughts, organize your ideas. We&apos;re building
         something great — stay tuned.
       </p>
+
+      <nav className="mt-4 flex items-center gap-4 text-sm font-medium">
+        <Link
+          href="/login"
+          className="text-foreground/70 hover:text-foreground"
+        >
+          Log in
+        </Link>
+        <Link
+          href="/register"
+          className="text-foreground/70 hover:text-foreground"
+        >
+          Sign up
+        </Link>
+        <Link
+          href="/notes"
+          className="text-foreground/70 hover:text-foreground"
+        >
+          Notes
+        </Link>
+      </nav>
     </main>
   );
 }
