@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Note Taking App",
-  description: "Note Taking App — coming soon.",
+  title: "Inkly — Note Taking App",
+  description: "Inkly is a note taking app — coming soon.",
 };
 
 export default function RootLayout({

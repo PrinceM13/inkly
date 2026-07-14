@@ -5,9 +5,13 @@ export default function Home() {
         Coming Soon
       </span>
 
-      <h1 className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-5xl font-extrabold tracking-tight text-transparent sm:text-7xl">
-        Note Taking App
+      <h1 className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-6xl font-extrabold tracking-tight text-transparent sm:text-8xl">
+        Inkly
       </h1>
+
+      <p className="text-lg font-medium text-foreground/80 sm:text-xl">
+        A note taking app
+      </p>
 
       <p className="max-w-md text-balance text-foreground/60">
         Capture your thoughts, organize your ideas. We&apos;re building
