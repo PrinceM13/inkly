@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="flex flex-1 flex-col items-center justify-center gap-6 px-6 text-center">
-      <span className="rounded-full border border-foreground/15 px-4 py-1 text-xs font-medium tracking-widest text-foreground/60 uppercase">
+      <span className="border-foreground/15 text-foreground/60 rounded-full border px-4 py-1 text-xs font-medium tracking-widest uppercase">
         Coming Soon
       </span>
 
@@ -9,11 +9,11 @@ export default function Home() {
         Inkly
       </h1>
 
-      <p className="text-lg font-medium text-foreground/80 sm:text-xl">
+      <p className="text-foreground/80 text-lg font-medium sm:text-xl">
         A note taking app
       </p>
 
-      <p className="max-w-md text-balance text-foreground/60">
+      <p className="text-foreground/60 max-w-md text-balance">
         Capture your thoughts, organize your ideas. We&apos;re building
         something great — stay tuned.
       </p>

@@ -7,7 +7,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 # Code style and formatting
 
-Prettier is the source of truth for formatting; ESLint (`eslint-config-next` + `eslint-config-prettier`) handles code quality only, not style.
+Prettier is the source of truth for formatting; ESLint (`eslint-config-next` + `eslint-config-prettier`) handles code quality only, not style. `prettier-plugin-tailwindcss` auto-sorts Tailwind classes in `className` on every format — don't hand-order classes.
 
 - `pnpm format:check` — verify formatting, no writes (use this in CI)
 - `pnpm format:fix` — apply formatting
