@@ -13,7 +13,7 @@ Prettier is the source of truth for formatting; ESLint (`eslint-config-next` + `
 - `pnpm format:fix` — apply formatting
 - `pnpm lint` — run ESLint
 
-Run `pnpm format:fix` and `pnpm lint` before committing.
+Run `pnpm format:fix` and `pnpm lint` before committing. Staged files are also auto-formatted/fixed by `lint-staged` (`lint-staged.config.mjs`) via a husky `pre-commit` hook — ESLint only blocks the commit on errors, not warnings, matching `pnpm lint`'s own exit behavior.
 
 # Commit messages
 
