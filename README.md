@@ -1,22 +1,30 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Development setup
 
-First, run the development server:
+**Prerequisites:** Node.js >= 20.9 and [pnpm](https://pnpm.io) (this repo uses a `pnpm-lock.yaml`, not npm/yarn).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the result. Edit `src/app/page.tsx` — the page auto-updates as you save.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts
+
+| Script              | Purpose                                    |
+| ------------------- | ------------------------------------------ |
+| `pnpm dev`          | Start the dev server                       |
+| `pnpm build`        | Production build                           |
+| `pnpm start`        | Run the production build                   |
+| `pnpm lint`         | Run ESLint                                 |
+| `pnpm format:check` | Check formatting with Prettier (no writes) |
+| `pnpm format:fix`   | Apply Prettier formatting                  |
+
+### Code style & commits
+
+Formatting, linting, and Tailwind class sorting are handled by Prettier/ESLint and auto-applied on staged files via a `lint-staged` + husky `pre-commit` hook. Commit messages must follow [Conventional Commits](https://www.conventionalcommits.org/) (`feat: ...`, `fix: ...`, `chore: ...`) and are enforced by a `commit-msg` hook. Both hooks are installed automatically by `pnpm install` (`prepare` script). See [`AGENTS.md`](./AGENTS.md) for the full conventions.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
