@@ -46,3 +46,6 @@ next-env.d.ts
 *.db-wal
 *.db-shm
 *.db-journal
+
+# claude code (per-user local settings)
+.claude/settings.local.json
