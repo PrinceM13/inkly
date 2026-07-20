@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SignOutButton } from "@/components/auth/sign-out-button";
 
 export function Header() {
   return (
@@ -10,12 +11,15 @@ export function Header() {
         >
           Inkly
         </Link>
-        <Link
-          href="/notes/new"
-          className="bg-foreground text-background focus-visible:outline-foreground rounded-md px-4 py-2 text-sm font-medium hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-        >
-          New Note
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link
+            href="/notes/new"
+            className="bg-foreground text-background focus-visible:outline-foreground rounded-md px-4 py-2 text-sm font-medium hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+          >
+            New Note
+          </Link>
+          <SignOutButton />
+        </div>
       </nav>
     </header>
   );
