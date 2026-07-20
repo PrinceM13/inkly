@@ -1,3 +1,6 @@
-export default function NoteEditorPage() {
-  return <p>Note editor</p>;
+import { requireSession } from "@/lib/session";
+
+export default async function NoteEditorPage() {
+  const session = await requireSession();
+  return <p>Note editor — signed in as {session.user.email}</p>;
 }
